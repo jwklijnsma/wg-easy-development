@@ -5,7 +5,7 @@
 #WORKDIR /
 #RUN git clone https://github.com/wg-easy/wg-easy
 
-FROM docker.io/library/node:18-alpine AS build_node_modules
+FROM docker.io/library/node:21-alpine AS build_node_modules
 LABEL maintainer="janwiebe@janwiebe.eu"
 
 # Copy Web UI
