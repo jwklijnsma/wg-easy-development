@@ -18,7 +18,7 @@ WORKDIR /wg-easy/src
 RUN npm install
 RUN npm ci --production
 
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 LABEL maintainer="janwiebe@janwiebe.eu"
 
 # Install necessary packages
