@@ -1,0 +1,67 @@
+# wg-easy-development documentation - built with Zensical (https://zensical.org), same design as shift-mox
+#   pip install -r requirements-docs.txt
+#   zensical serve            # preview on http://localhost:8000
+#   zensical build --strict   # what CI runs
+
+[project]
+site_name = "wg-easy-development"
+site_description = "Nightly container image of the newest upstream wg-easy"
+site_url = "https://jwklijnsma.github.io/wg-easy-development/"
+repo_url = "https://github.com/jwklijnsma/wg-easy-development"
+repo_name = "jwklijnsma/wg-easy-development"
+edit_uri = "edit/main/docs/"
+copyright = "wg-easy-development - based on wg-easy by Emile Nijssen"
+nav = [
+  { "Home" = "index.md" },
+]
+
+[project.theme]
+language = "en"
+features = [
+  "content.action.edit",
+  "content.code.annotate",
+  "content.code.copy",
+  "navigation.footer",
+  "navigation.sections",
+  "navigation.tabs",
+  "navigation.top",
+  "search.highlight",
+]
+
+[project.theme.icon]
+logo = "material/vpn"
+repo = "fontawesome/brands/github"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "red"
+accent = "deep orange"
+toggle.icon = "material/weather-night"
+toggle.name = "Dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "red"
+accent = "deep orange"
+toggle.icon = "material/weather-sunny"
+toggle.name = "Light mode"
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+md_in_html = {}
+tables = {}
+toc.permalink = true
+pymdownx.details = {}
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.highlight.anchor_linenums = true
+pymdownx.inlinehilite = {}
+pymdownx.keys = {}
+pymdownx.snippets = {}
+pymdownx.tabbed.alternate_style = true
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
